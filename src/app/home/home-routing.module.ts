@@ -1,23 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
-import { ContactComponent } from './contact/contact.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { DocComponent } from './doc/doc.component';
-import { DonateComponent } from './donate/donate.component';
-import { NotebookComponent } from './notebook/notebook.component';
-import { SearchComponent } from './search/search.component';
+import { siteRouter } from '../site/site.routing';
+
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, children: [
-      { path: 'calendar', component: CalendarComponent },
-      { path: 'contact', component: ContactComponent },
-      { path: 'doc', component: DocComponent },
-      { path: 'donate', component: DonateComponent },
-      { path: 'notebook', component: NotebookComponent },
-      { path: 'search', component: SearchComponent },
-  ] }
+  { path: 'home', component: HomeComponent, children: siteRouter }
 ];
 
 @NgModule({

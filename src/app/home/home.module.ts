@@ -6,19 +6,15 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
 import { CustomMaterialModule } from '../custom-material.module';
-import { CalendarComponent } from './calendar/calendar.component';
-import { DocComponent } from './doc/doc.component';
-import { NotebookComponent } from './notebook/notebook.component';
-import { SearchComponent } from './search/search.component';
-import { DonateComponent } from './donate/donate.component';
-import { ContactComponent } from './contact/contact.component';
+import { SiteModule } from '../site/site.module';
 
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CustomMaterialModule
+    CustomMaterialModule,
+    SiteModule
   ],
-  declarations: [HomeComponent, HeaderComponent, AsideComponent, CalendarComponent, DocComponent, NotebookComponent, SearchComponent, DonateComponent, ContactComponent]
+  declarations: [HomeComponent, HeaderComponent, AsideComponent ]
 })
 export class HomeModule { }
