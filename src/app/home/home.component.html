@@ -3,9 +3,11 @@
     <app-header></app-header>
   </div>
   <div fxFlex fxLayout="row" class="main">
-    <div fxFlex="200px" class="aside">
+    <div fxFlex="200px" class="aside scrollbar">
       <app-aside></app-aside>
     </div>
-    <div fxFlex class="content">Content</div>
+    <div fxFlex class="content">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

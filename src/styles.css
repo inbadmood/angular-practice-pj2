@@ -3,7 +3,9 @@ html,
 body {
   height: 100%;
   margin: 0px;
+  overflow-y: hidden;
 }
+
 /* Angular Material2 Themes */
  @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
  /* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
