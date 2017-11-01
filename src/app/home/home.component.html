@@ -7,13 +7,14 @@
   </div>
 
   <div fxFlex fxLayout="row" class="main">
-    <mat-sidenav-container fxFill>
-      <mat-sidenav #sidenav mode="over" class="aside">
-        <div fxFlex="200px" class="aside scrollbar">
-          <app-aside></app-aside>
-         </div>
-       </mat-sidenav>
-    <div fxFlex class="content">
+      <mat-sidenav-container fxFill>
+          <mat-sidenav #sidenav mode="over" class="aside">
+            <div fxFlex="200px" class="aside scrollbar">
+              <app-aside></app-aside>
+             </div>
+           </mat-sidenav>
+
+     <div fxFlex class="content">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-container>
