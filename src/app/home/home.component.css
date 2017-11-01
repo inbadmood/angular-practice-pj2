@@ -17,6 +17,9 @@
     }
     .content {
       background: orange;
+      height: 100%;
+      margin: 0px;
+      overflow-y: hidden;
     }
     .scrollbar {
       overflow-x: hidden;
