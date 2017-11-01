@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
-import { siteRouter } from '../site/site.routing';
-
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, children: siteRouter }
+  { path: 'home', component: HomeComponent, children: [
+    { path: '', loadChildren: './../site/site.module#SiteModule' }
+  ]
+}
 ];
 
 @NgModule({

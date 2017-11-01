@@ -6,10 +6,12 @@ import { NotebookComponent } from './notebook/notebook.component';
 import { SearchComponent } from './search/search.component';
 import { DonateComponent } from './donate/donate.component';
 import { ContactComponent } from './contact/contact.component';
+import { SiteRoutingModule } from './site-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SiteRoutingModule
   ],
   declarations: [CalendarComponent, DocComponent, NotebookComponent, SearchComponent, DonateComponent, ContactComponent]
 })

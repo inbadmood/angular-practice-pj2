@@ -6,14 +6,12 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './header/header.component';
 import { AsideComponent } from './aside/aside.component';
 import { CustomMaterialModule } from '../custom-material.module';
-import { SiteModule } from '../site/site.module';
 
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CustomMaterialModule,
-    SiteModule
+    CustomMaterialModule
   ],
   declarations: [HomeComponent, HeaderComponent, AsideComponent ]
 })
